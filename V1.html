@@ -171,6 +171,14 @@ main>.head{display:none}
 @media(max-width:560px){
   .gw{width:100vw;max-width:100vw;margin-left:calc(50% - 50vw)!important;margin-right:calc(50% - 50vw)!important;gap:2px!important}
 }
+/* ===== Bar atas dihapus, label Open, sudut sedikit membulat ===== */
+.bar{display:none}
+.cb::after{content:"Open \25B6"}
+.cb.on::after{content:"\2713  Opened"}
+.c,.th{border-radius:8px!important}
+/* ===== Kartu video selalu sejajar (tanpa efek hover yang nyangkut di layar sentuh) ===== */
+.c:hover{transform:none!important;box-shadow:none!important}
+@media(hover:none){.th:hover .pl{transform:none}.cb:hover{transform:none}}
 </style>
 </head>
 <body>
@@ -198,7 +206,7 @@ main>.head{display:none}
       <div id="grid" style="display:contents"></div>
     </div>
     <div class="pager" id="pager"></div>
-    <section class="catsec" id="catsec"><div class="head"><h2>Pilih kategori</h2></div><p class="chint">👆 <b>Ketuk salah satu kumpulan</b> di bawah untuk membuka videonya.</p><div class="catgrid" id="cats"></div></section>
+    <section class="catsec" id="catsec"><div class="head"><h2>Kategori</h2></div><div class="catgrid" id="cats"></div></section>
   </main>
 </div>
 <footer><div class="wrap">
