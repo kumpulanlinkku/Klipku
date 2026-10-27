@@ -63,12 +63,6 @@ footer .r{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;ali
 footer .brand{color:#fff}
 footer .l{display:flex;gap:20px;flex-wrap:wrap;font-size:14px}
 footer small{display:block;margin-top:20px;font-size:13px;color:#8391b5}
-.adm{display:none;background:#fff;border-radius:24px;padding:20px;margin-bottom:24px;border:2px dashed var(--co)}
-.adm.on{display:block}.adm h3{margin:0 0 12px;font-size:16px}
-.adm .row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
-.adm input,.adm textarea{flex:1;min-width:170px;padding:12px 14px;border:1px solid var(--line);border-radius:14px;font:inherit;background:var(--bg)}
-.adm textarea{width:100%;min-height:90px}
-.adm p{margin:6px 0 0;font-size:13px;color:var(--mut);line-height:1.5}
 .sm{border:1px solid var(--line);background:#fff;border-radius:99px;padding:8px 14px;font:700 13px 'DM Sans',Arial;cursor:pointer}
 .ed{display:flex;flex-direction:column;gap:8px;padding:6px 8px 8px}.ed input{padding:11px 13px;border:1px solid var(--line);border-radius:12px;font:inherit;font-size:14px;background:var(--bg);width:100%}.ed input.bad{border-color:var(--co)}.ed .sm{align-self:flex-start}
 .toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:12px 20px;border-radius:99px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:9}
@@ -98,13 +92,6 @@ footer small{display:block;margin-top:20px;font-size:13px;color:#8391b5}
 .cb.on{background:var(--cc);color:#fff}.cb.on small{color:#fff}
 .cat .ed{padding:0}
 @media(max-width:860px){.catgrid{grid-template-columns:repeat(2,1fr)}}
-.ad{display:flex;justify-content:center;align-items:center;max-width:100%;overflow:hidden}
-.ad-top:has(>:not(script)){margin-top:18px}
-.ad-bot{display:block;text-align:center}
-.ad-duo{gap:10px;flex-wrap:wrap}.ad-duo>div{display:flex;justify-content:center;min-width:0}.ad-duo:has(iframe){margin-top:18px}
-.ad-mid:has(iframe){margin:0 0 22px}
-.ad-cat:has(iframe){margin-top:40px}
-.ad-bot:has(#container-3e3d59d4181cab5fac48c98e54c135e8>*){margin-top:40px}
 /* ===== Mode gelap ===== */
 :root{color-scheme:dark;--bg:#0b1020;--card:#141b33;--surf:#1c2544;--ink:#eef2ff;--mut:#9aa7c9;--line:#2a3558;--btn:#eef2ff;--btnt:#0b1020}
 body{background:radial-gradient(800px 420px at 90% -120px,rgba(255,90,69,.17),transparent 65%),radial-gradient(700px 420px at -10% 40px,rgba(18,181,165,.13),transparent 65%),var(--bg);background-repeat:no-repeat}
@@ -125,7 +112,6 @@ body{background:radial-gradient(800px 420px at 90% -120px,rgba(255,90,69,.17),tr
 .pager button.on{background:var(--co);color:#fff}
 footer{background:#070b17;color:#b4bfdc}
 footer .r{border-bottom-color:#1f2a4a}
-.adm input,.adm textarea,.ed input,.gc input{color:var(--ink)}
 .sbox input{background-color:var(--surf);color:var(--ink);box-shadow:0 4px 16px rgba(0,0,0,.35);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' stroke='%239aa7c9' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='9' cy='9' r='6.5'/%3E%3Cpath d='m14 14 4.5 4.5'/%3E%3C/svg%3E")}
 .toast{background:var(--btn);color:var(--btnt)}
 /* ===== Gambar 9:16 ===== */
@@ -138,7 +124,6 @@ footer .r{border-bottom-color:#1f2a4a}
 .kbox input{width:100%;padding:13px 16px;border:2px dashed var(--co);border-radius:99px;background:var(--surf);color:var(--ink);font:500 15px 'DM Sans',Arial,sans-serif}
 .kbox small{display:block;font-size:12px;color:var(--mut);margin:6px 4px 0}
 .sm:disabled{opacity:.6}
-.ad-end:has(iframe){margin-top:30px}
 /* ===== Hero teks disembunyikan; tombol Mulai nonton merah ===== */
 .hero{padding:16px 0 30px}
 .bar .pill{background:var(--co);color:#fff;box-shadow:0 8px 24px rgba(255,90,69,.4)}
@@ -147,10 +132,6 @@ footer .r{border-bottom-color:#1f2a4a}
 .hero{gap:14px}
 .hero{padding-bottom:0}
 main>.head{margin-top:20px}
-.ad-fit{display:block;position:relative;overflow:hidden;height:0;width:100%}
-.ad-fit .adin{position:absolute;top:0;left:50%;transform-origin:50% 0}
-.ad-top.ad-fit:has(iframe){margin-top:18px}
-.ad-cat.ad-fit:has(iframe){margin-top:40px}
 main>.head{display:none}
 .sbox{margin-top:14px}
 /* ===== Foto 9:16 sedikit lebih besar, kartu lebih rapat ===== */
@@ -158,22 +139,12 @@ main>.head{display:none}
 .c{padding:4px!important;border-radius:16px!important}
 .th{border-radius:12px}
 /* ===== Iklan setiap 2 video ===== */
-.gw>.ad-g{grid-column:1/-1}
 #grid article{order:1}
 #grid article:nth-child(n+3){order:3}
 #grid article:nth-child(n+5){order:5}
 #grid article:nth-child(n+7){order:7}
 #grid article:nth-child(n+9){order:9}
 #grid article:nth-child(n+11){order:11}
-.ad-g1{order:2}.ad-g2{order:4}.ad-g3{order:6}.ad-g4{order:8}.ad-g5{order:10}.ad-g6{order:12}
-.ad-g.ad-fit:has(iframe){margin:8px 0}
-.gw:not(:has(#grid article)) .ad-g{display:none!important}
-.gw:not(:has(#grid article:nth-child(3))) .ad-g2{display:none!important}
-.gw:not(:has(#grid article:nth-child(5))) .ad-g3{display:none!important}
-.gw:not(:has(#grid article:nth-child(7))) .ad-g4{display:none!important}
-.gw:not(:has(#grid article:nth-child(9))) .ad-g5{display:none!important}
-.gw:not(:has(#grid article:nth-child(11))) .ad-g6{display:none!important}
-.ad-end.ad-fit:has(iframe){margin-top:30px}
 /* ===== Desktop: video di tengah, 2 kolom ===== */
 @media(min-width:561px){.gw{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px!important;max-width:760px;margin-left:auto;margin-right:auto}}
 /* ===== Kumpulan: tampilan tombol yang jelas bisa diklik ===== */
@@ -192,6 +163,14 @@ main>.head{display:none}
 .chint{margin:-6px 0 16px;color:var(--mut);font-size:14px;line-height:1.4}
 .chint b{color:#fff}
 @media(prefers-reduced-motion:reduce){.cb::after{animation:none}}
+/* ===== Video full ke samping, sudut kotak ===== */
+.c,.th{border-radius:0!important}
+.c{padding:0!important;box-shadow:none!important}
+.meta{padding:12px 14px!important}
+.ed{padding:0 14px 14px}
+@media(max-width:560px){
+  .gw{width:100vw;max-width:100vw;margin-left:calc(50% - 50vw)!important;margin-right:calc(50% - 50vw)!important;gap:2px!important}
+}
 </style>
 </head>
 <body>
@@ -201,12 +180,6 @@ main>.head{display:none}
   <a class="pill" href="#video">Mulai nonton</a>
 </div>
 <div class="wrap">
-<div class="ad ad-top ad-fit" data-w="728" data-h="90" style="height: 0px;"><div class="adin" style="width: 728px; margin-left: -364px; transform: scale(0.450549);"><script>
-if(!(/admin/.test(location.hash+location.search)||document.querySelector('meta[name=editor]').content==='on')){
-atOptions={'key':'1dd4cfbecc2577fe99886f406500e3ba','format':'iframe','height':90,'width':728,'params':{}};
-document.write('<scr'+'ipt src="https://biomanos.org/22/1dd4cfbecc2577fe99886f406500e3ba"></scr'+'ipt>');
-}
-</script></div></div>
   <section class="hero">
     <div hidden="">
       <span class="tagline"><b></b>Update setiap hari</span>
@@ -220,40 +193,13 @@ document.write('<scr'+'ipt src="https://biomanos.org/22/1dd4cfbecc2577fe99886f40
     <main id="video">
     <div class="head"><h2>Video pilihan</h2><span id="pg">Halaman 1 dari 834</span></div>
     <div class="sbox"><input id="q" type="search" placeholder="Cari video, contoh: Video #76" enterkeyhint="search" autocomplete="off" aria-label="Cari video"></div>
-    <div class="ad ad-mid ad-fit" data-w="468" data-h="60" style="height: 0px;"><div class="adin" style="width: 468px; margin-left: -234px; transform: scale(0.700855);"><script>
-if(!(/admin/.test(location.hash+location.search)||document.querySelector('meta[name=editor]').content==='on')){
-atOptions={'key':'bcc13941f81eadb34f0226a70238d459','format':'iframe','height':60,'width':468,'params':{}};
-document.write('<scr'+'ipt src="https://biomanos.org/22/bcc13941f81eadb34f0226a70238d459"></scr'+'ipt>');
-}
-</script></div></div>
     
     <div class="grid gw">
       <div id="grid" style="display:contents"></div>
-      <div class="ad ad-g ad-g3 ad-fit" data-w="320" data-h="50" style="height: 0px;"><div class="adin" style="width: 320px; margin-left: -160px; transform: scale(1);"><script>
-if(!(/admin/.test(location.hash+location.search)||document.querySelector('meta[name=editor]').content==='on')){
-atOptions={'key':'a076784fd586a81e0aff53a86acf90a0','format':'iframe','height':50,'width':320,'params':{}};
-document.write('<scr'+'ipt src="https://biomanos.org/22/a076784fd586a81e0aff53a86acf90a0"></scr'+'ipt>');
-}
-</script></div></div>
     </div>
     <div class="pager" id="pager"></div>
-    <div class="ad ad-cat ad-fit" data-w="468" data-h="60" style="height: 0px;"><div class="adin" style="width: 468px; margin-left: -234px; transform: scale(0.700855);"><script>
-if(!(/admin/.test(location.hash+location.search)||document.querySelector('meta[name=editor]').content==='on')){
-atOptions={'key':'bcc13941f81eadb34f0226a70238d459','format':'iframe','height':60,'width':468,'params':{}};
-document.write('<scr'+'ipt src="https://biomanos.org/22/bcc13941f81eadb34f0226a70238d459"></scr'+'ipt>');
-}
-</script></div></div>
     <section class="catsec" id="catsec"><div class="head"><h2>Pilih kategori</h2></div><p class="chint">👆 <b>Ketuk salah satu kumpulan</b> di bawah untuk membuka videonya.</p><div class="catgrid" id="cats"></div></section>
   </main>
-<div class="ad ad-end ad-fit" data-w="728" data-h="90" style="height: 0px;"><div class="adin" style="width: 728px; margin-left: -364px; transform: scale(0.450549);"><script>
-if(!(/admin/.test(location.hash+location.search)||document.querySelector('meta[name=editor]').content==='on')){
-atOptions={'key':'1dd4cfbecc2577fe99886f406500e3ba','format':'iframe','height':90,'width':728,'params':{}};
-document.write('<scr'+'ipt src="https://biomanos.org/22/1dd4cfbecc2577fe99886f406500e3ba"></scr'+'ipt>');
-}
-</script></div></div>
-<div class="ad ad-bot"><div id="container-3e3d59d4181cab5fac48c98e54c135e8"></div><script>
-if(!(/admin/.test(location.hash+location.search)||document.querySelector('meta[name=editor]').content==='on')){var s=document.createElement('script');s.async=true;s.setAttribute('data-cfasync','false');s.src='https://biomanos.org/21/3e3d59d4181cab5fac48c98e54c135e8';document.currentScript.parentNode.appendChild(s)}
-</script></div>
 </div>
 <footer><div class="wrap">
   <div class="r"><a class="brand" href="#"><i>▶</i><span class="nm">Klipku</span></a>
@@ -451,27 +397,4 @@ render();
 </script>
 
 
-<script>
-(function(){
-  document.querySelectorAll('.ad-fit').forEach(function(box){
-    var w=+box.dataset.w,h=+box.dataset.h,inn=box.querySelector('.adin');
-    inn.style.width=w+'px';inn.style.marginLeft=(-w/2)+'px';
-    function fit(){
-      var has=!!inn.querySelector('iframe');
-      var k=Math.min(1,box.parentNode.clientWidth/w);
-      inn.style.transform='scale('+k+')';
-      box.style.height=has?Math.round(h*k)+'px':'0';
-    }
-    fit();
-    window.addEventListener('resize',fit);window.addEventListener('load',fit);
-    try{new MutationObserver(fit).observe(inn,{childList:true,subtree:true})}catch(e){}
-    var n=0,t=setInterval(function(){fit();if(++n>20)clearInterval(t)},500);
-  });
-})();
-</script>
-<script>
-if(!(/admin/.test(location.hash+location.search)||document.querySelector('meta[name=editor]').content==='on')){
-document.write('<scr'+'ipt data-cfasync="false" src="https://biomanos.org/14/d681e5e19f29ab7477bc22816cc0cf2b"></scr'+'ipt>');
-}
-</script>
 </body></html>
